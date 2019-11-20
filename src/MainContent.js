@@ -14,6 +14,7 @@ class MainContent extends Component {
   render () {
     return (
       <div>
+        <br />
         <img src={tempimage} alt={this.state.imageCaption} className="center"/>
       </div>
     );

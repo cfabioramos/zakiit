@@ -3,9 +3,8 @@ import React from "react"
 function Footer() {
 
     return (
-        <footer>
-            <h3>Congrats to Carlos Fábio and Valtércio Calmon</h3>
-        </footer>
+        <footer class="center blockquote-footer">
+            Congrats to <cite title="Source Title">Carlos Fábio and Valtércio Calmon</cite></footer>
     )
 
 }
