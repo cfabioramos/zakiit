@@ -1,24 +1,16 @@
-import React, {Component} from 'react';
-import tempimage from './under_construction.gif';
+import React, { useState } from 'react';
+import tempimage from './img/under_construction.gif';
 
-class MainContent extends Component {
+function MainContent() {
 
-  constructor() {
-    super()
-    this.state = {
-      imageCaption: "Under construction...",
-      count : 0
-    }
-  }
+  const [imageCaption] = useState("Under construction...");
 
-  render () {
-    return (
+  return (
       <div>
         <br />
-        <img src={tempimage} alt={this.state.imageCaption} className="center"/>
+        <img src={tempimage} alt={imageCaption} className="center"/>
       </div>
-    );
-  }
+  );
 }
 
 export default MainContent;
